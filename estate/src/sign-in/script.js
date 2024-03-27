@@ -1,5 +1,7 @@
 const ID = 'userIdentity';
 const PASSWORD = 'P!ssw0rd';
+const EMAIL = 'email@email.com';
+const AUTH_NUMBER = '1010';
 
 function onSignInButtonClickHandler(event) {
     const id = document.getElementById('id').value;
@@ -15,23 +17,8 @@ function onSignInButtonClickHandler(event) {
 }
 
 function onSignUpLinkClickHandler(event) {
-    window.location.href = 'https://google.com';
+    window.location.href = '../sign-up';
 }
 
 const signUpLinkElement = document.getElementById('sign-up-link');
 signUpLinkElement.addEventListener('click', onSignUpLinkClickHandler);
-
-// kakao https://developers.kakao.com/
-function onKakaoButtonClickHandler(event) {
-    window.location.href = 'https://developers.kakao.com/';
-}
-
-// naver https://developers.naver.com/
-function onNaverButtonClickHandler(event) {
-    window.location.href = 'https://developers.naver.com/';
-}
-
-const kakaoButtonElement = document.getElementById('kakao-button');
-kakaoButtonElement.addEventListener('click', onKakaoButtonClickHandler);
-const naverButtonElement = document.getElementById('naver-button');
-naverButtonElement.addEventListener('click', onNaverButtonClickHandler);
